@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title></title>
+    <title>Mainak Mondal</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link href="./style.css" rel="stylesheet" />
   </head>
   <body>
@@ -24,7 +25,7 @@
     <main>
       <h2># Bio</h2>
       <p>
-        <span title="Hello in Greek">Geia, </span>
+        <span id ="greet" title="Hello in Greek">नमस्ते</span>
         I'm Mainak Mondal, a computer science student and developer. I enjoy creating projects that blend creativity with technology. Arch and Neovim user btw!!
       </p>
 
@@ -33,10 +34,10 @@
       <h2># Projects</h2>
       <div class="para">
         <ul class="body-list">
-          <li><a href="#">Wordom </a>: Word of the day app</li>
-          <li><a href="#">Rhythm</a> : Proprietary Health visualizer app</li>
-          <li><a href="#">BinT</a> : Time Based Binary guessing game</li>
-          <li><a href="#">Expense Tracker</a> : Managing finacence</li>
+          <li><a href="https://github.com/mainakM24/Wordom">Wordom </a>: Word of the day app</li>
+          <li><a href="https://github.com/mainakM24/rhythm-patient-rewrite">Rhythm</a> : Proprietary Health visualizer app</li>
+          <li><a href="https://github.com/mainakM24/app-bin-t">BinT</a> : Time Based Binary guessing game</li>
+          <li><a href="https://github.com/mainakM24/expense-tracker">Expense Tracker</a> : Managing finacence</li>
         </ul>
       </div>
 
@@ -59,11 +60,33 @@
       <div class="para">
         <ul class="body-list">
           <li>Github: <a href="https://github.com/mainakM24">github.com/mainakM24</a></li>
-          <li>LinkedIn: <a href="https://www.linkedin.com/in/mainak-mondal-3a2935305/">linkedin.com/in/mainak-mondal-3a2935305/</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/mainakM24/">linkedin.com/in/mainakM24/</a></li>
           <li>X: <a href="https://x.com/MainakMondal24">x.com/MainakMondal24</a></li>
           <li>Email: <a href="mailto:mainakmondal24@gmail.com">mainakmondal24@gmail.com</a></li>
         </ul>
       </div>
     </main>
+
+    <script>
+
+      const greetings = ['Hello','你好', 'Hola', 'Hallo',  'Giea', 'Ciao', 'Bonjour', 'नमस्ते'];
+      const greet = document.getElementById("greet");
+
+      let currentIndex = 0;
+
+      function changeGreeting() {
+
+        greet.style.opacity = 0;
+
+        setTimeout(() => {
+          greet.textContent = greetings[currentIndex];
+          greet.style.opacity = 1;
+          currentIndex = (currentIndex + 1) % greetings.length; 
+        }, 500);
+
+      }
+      setInterval(changeGreeting, 3000);
+
+    </script>
   </body>
 </html>

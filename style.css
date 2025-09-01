@@ -62,6 +62,12 @@ h2 {
     margin-bottom: 8px;
 }
 
+#greet {
+    display: inline-block;
+    min-width: 45px;
+    transition: opacity 0.5s ease-in-out;
+}
+
 .para, p {
     color: var(--foreground);
     font-size: large;
@@ -88,7 +94,7 @@ h2 {
     height: 22px;
     width: 22px;
     border-radius: 15%;
-    rotate: 45deg;
+    animation: roll 2s infinite forwards;
     background-color: var(--primary);
 }
 
@@ -129,4 +135,13 @@ h2 {
 .skills > div:hover {
     background-color: var(--background);
     color: antiquewhite;
+}
+
+@keyframes roll {
+   from {
+    rotate: 0deg;
+   } 
+   to {
+    rotate: 360deg;
+   }
 }
