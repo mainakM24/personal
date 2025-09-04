@@ -35,17 +35,18 @@ function displayColor() {
     }
 }
 
-colorGrid.addEventListener("mouseenter", () => {
-    isColorGridHovered = true;
-    displayColor();
-});
-
-colorGrid.addEventListener("mouseleave", () => {
-    isColorGridHovered = false;
-    displayColor();
-});
-
 colorBoxes.forEach((box, i) => {
+
+    box.addEventListener("mouseenter", () => {
+        isColorGridHovered = true;
+        displayColor();
+    })
+
+    box.addEventListener("mouseleave", () => {
+        isColorGridHovered = false;
+        displayColor();
+    })
+    
     box.addEventListener("click", () => {
         navigator.clipboard.writeText(colors[i]).then(() => {
             toast.textContent = colors[i] + " Copied";
