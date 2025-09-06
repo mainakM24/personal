@@ -62,6 +62,13 @@ colorBoxes.forEach((box, i) => {
     })
 });
 
+function showPage(pageId){
+  document.querySelectorAll('.page').forEach(page => {
+    page.classList.add('hidden');
+  })
+  document.getElementById(pageId).classList.remove('hidden');
+  history.pushState(null,"",'#' + pageId);
+}
 
 displayColor();
 setInterval(displayColor, 4000);

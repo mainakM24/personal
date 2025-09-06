@@ -11,18 +11,19 @@
     <header>
       <div class="name-section">
         <div class="fidget"></div>
-        <h1>Mainak</h1>
+	<a class="title-name" onclick="showPage('homepage')">Mainak</a>
       </div>
       <nav>
         <ul>
-          <li><a href="#">projects</a></li>
-          <li><a href="#">wisdom</a></li>
-          <li><a href="#">tek</a></li>
+	  <li><a onclick="showPage('homepage')">home</a></li>
+	  <li><a onclick="showPage('projects')">projects</a></li>
+	  <li><a onclick="showPage('wisdom')">wisdom</a></li>
+	  <li><a onclick="showPage('tek')">tek</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
+    <main id="homepage" class="page">
       <h2># Bio</h2>
       <p>
         <span id ="greet" title="Hello in Greek">नमस्ते</span>
@@ -80,6 +81,83 @@
       </div>
       
     </main>
+
+    <main id="projects" class="page hidden">
+      <h1 class="page-title">Projects</h1>
+
+      <h2># Wordom</h2>
+      <div class="screenshots">
+	<img src="https://github.com/mainakM24/Wordom/raw/master/screenshots/Screenshot_2025-08-29-10-54-03-61_91f08973af2788a72f3413f23c22772b.jpg?" 
+      	alt="ss" height="auto" width="30%">
+
+      	<img src="https://github.com/mainakM24/Wordom/raw/master/screenshots/Screenshot_2025-08-29-10-54-21-46_91f08973af2788a72f3413f23c22772b.jpg?" 
+      	alt="ss" height="auto" width="30%">
+
+      	<img src="https://github.com/mainakM24/Wordom/raw/master/screenshots/Screenshot_2025-08-29-10-54-55-22_91f08973af2788a72f3413f23c22772b.jpg" 
+      	alt="ss" height="auto" width="30%">
+      </div>
+      <p> A simple Android app which shows a Word of the Day, and it refreshes every day.</p>
+      <h3>## Technology Used </h3>
+      <div class="para technology">
+        <div>Kotlin</div>
+	<div>Retrofit</div>
+	<div>koin</div>
+	<div>Jecpack Compose</div>
+      </div>
+
+      <div class="spacer"></div>
+
+      <h2># Rhythm</h2>
+      <p> A simple Android app which shows a Word of the Day, and it refreshes every day.</p>
+      <h3>## Technology Used </h3>
+      <div class="para technology">
+        <div>Java</div>
+        <div>XML</div>
+	<div>Retrofit</div>
+	<div>MpAndroid Chart</div>
+      </div>
+
+      <div class="spacer"></div>
+
+      <h2># BinT</h2>
+      <div class="screenshots">
+	<img src="https://github.com/mainakM24/app-bin-T/raw/main/screenshots/binT-2.png" alt="ss" height="auto" width="100%">
+      </div>
+      <p> A time based binary guessing game created with Svelte JS. Every mnute there is a random (based on time) binary number wil appear and you have to guess it before hand , and can bet money (virtual) on it.</p>
+      <h3>## Technology Used </h3>
+      <div class="para technology">
+        <div>Svelte Js</div>
+	<div>Html</div>
+	<div>CSS</div>
+	<div>Typescript</div>
+	<div>PocketBase</div>
+      </div>
+
+      <div class="spacer"></div>
+
+      <h2># Expense Tracker</h2>
+      <p> This is a dynamic web application built using Java Servlets, JSP, JDBC, and MySQL. The project allows users to manage their budgets and expenses effectively.</p>
+      <h3>## Technology Used </h3>
+      <div class="para technology">
+	<div>Spring MVC</div>
+        <div>Java</div>
+        <div>JSP</div>
+        <div>JDBC</div>
+        <div>MySQL</div>
+	<div>Tailwind CSS</div>
+      </div>
+
+      <div class="spacer"></div>
+    </main>
+
+    <main id="wisdom" class="page hidden">
+      <h1>Wisdom</h1>
+    </main>
+
+    <main id="tek" class="page hidden">
+      <h1>Tek</h1>
+    </main>
+    
     <div id="toast" class="toast hidden"></div>
     <script src="index.js"></script>
   </body>
