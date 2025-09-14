@@ -213,6 +213,14 @@ img {
     border-radius: 8px;
 }
 
+#quotes-list {
+    list-style: none;
+}
+
+#quotes-list > li {
+    padding: 4px;
+}
+
 .toast {
     position: fixed;
     bottom: 10px;
