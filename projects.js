@@ -15,7 +15,7 @@ const shboot = {
     projectName : "Shboot",
     description : "A single player bubble shooter game completely made with raylib in C/C++",
     links : ["https://github.com/mainakM24/shboot"],
-    technologies: ["C/C++", "Raylib", "gcc"],
+    technologies: ["C/C++", "Raylib", "gcc", "make"],
     screenshots : ["https://github.com/mainakM24/shboot/blob/main/screenshots/shboot-comp.gif?raw=true"],
     ssWidth: 100
 }
@@ -53,7 +53,18 @@ const boids = {
     screenshots : ["https://github.com/mainakM24/boids-jetpack/blob/master/screenshots/boids.gif?raw=true"],
     ssWidth: 30
 }
-const projects = [wordom, shboot, boids, bint, rhythm, expenseTracker];
+
+const sfmlClock = {
+    projectName : "SFML Clock",
+    description : "Simple clock app which shows the current system's time, made with SFLM in C++.",
+    links : ["https://github.com/mainakM24/sfml-clock"],
+    technologies: ["SFML", "C/C++", "make", "gcc"],
+    screenshots : ["https://github.com/mainakM24/sfml-clock/blob/main/sfml-clock.gif?raw=true"],
+    ssWidth: 100
+}
+
+
+const projects = [wordom, shboot, boids, sfmlClock, bint, rhythm, expenseTracker];
 
 function addProjects(){
     const projectPage = document.getElementById("projects");
