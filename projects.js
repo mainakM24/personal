@@ -34,7 +34,8 @@ const rhythm = {
     description : "A health monitoring android app.",
     links : ["https://github.com/mainakM24/rhythm-patient-rewrite"],
     technologies: ["Java", "XML", "Retrofit", "MpAndroidChart", "Gradle"],
-    screenshots : []
+    screenshots : [],
+    ssWidth: 0
 }
 
 const expenseTracker = {
@@ -42,7 +43,8 @@ const expenseTracker = {
     description : "This is a dynamic web application built using Java Servlets, JSP, JDBC, and MySQL. The project allows users to manage their budgets and expenses effectively.",
     links : ["https://github.com/mainakM24/expense-tracker"],
     technologies: ["Spring MVC", "JSP", "JDBC", "MySQL", "Tailwind CSS", "Maven"],
-    screenshots : []
+    screenshots : [],
+    ssWidth: 0
 }
 
 const boids = {
@@ -63,8 +65,16 @@ const sfmlClock = {
     ssWidth: 100
 }
 
+const pixy = {
+    projectName : "Pixy",
+    description : "Simple application to pixelate your image, written in C using STB Library",
+    links : ["https://github.com/mainakM24/pixy"],
+    technologies: ["C/C++", "stb", "gcc"],
+    screenshots : ["https://raw.githubusercontent.com/mainakM24/pixy/refs/heads/main/screenshot/SS-1.png"],
+    ssWidth: 100
+}
 
-const projects = [wordom, shboot, boids, sfmlClock, bint, rhythm, expenseTracker];
+const projects = [pixy, wordom, shboot, boids, sfmlClock, bint, rhythm, expenseTracker];
 
 function addProjects(){
     const projectPage = document.getElementById("projects");
